@@ -1,0 +1,23 @@
+{
+  "name": "js_object_playground",
+  "version": "1.0.0",
+  "description": "A small project to practice creating JS objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottmacphersonmusic/js_object_playground.git"
+  },
+  "author": "Scott Macpherson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottmacphersonmusic/js_object_playground/issues"
+  },
+  "homepage": "https://github.com/scottmacphersonmusic/js_object_playground#readme",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3"
+  }
+}
