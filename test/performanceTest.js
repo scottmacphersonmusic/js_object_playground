@@ -25,4 +25,11 @@ describe('A Performance instance', function() {
     date.setHours(9);
     expect(performance.paysEnough()).to.be.false;
   });
+
+  it('should have a changeVenue() method', function() {
+    var date = new Date(2015, 10, 7, 20, 30);
+    var performance = new Performance('Paramount', date, 350);
+    performance.changeVenue('Triple Door');
+    expect(performance.venue).to.equal('Triple Door');
+  });
 });
