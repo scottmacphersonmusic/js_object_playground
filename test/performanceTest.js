@@ -32,4 +32,12 @@ describe('A Performance instance', function() {
     performance.changeVenue('Triple Door');
     expect(performance.venue).to.equal('Triple Door');
   });
+
+  it('should have a changeDate() method', function() {
+    var date = new Date(2015, 10, 7, 20, 30);
+    var performance = new Performance('Paramount', date, 350);
+    var newDate = new Date(2015, 10, 7, 21, 0);
+    performance.changeDate(newDate);
+    expect(performance.date.getHours()).to.equal(21);
+  });
 });
