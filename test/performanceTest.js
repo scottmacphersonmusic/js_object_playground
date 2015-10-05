@@ -40,4 +40,11 @@ describe('A Performance instance', function() {
     performance.changeDate(newDate);
     expect(performance.date.getHours()).to.equal(21);
   });
+
+  it('should have a changeCompensation() method', function() {
+    var date = new Date(2015, 10, 7, 20, 30);
+    var performance = new Performance('Paramount', date, 350);
+    performance.changeCompensation(375);
+    expect(performance.compensation).to.equal(375);
+  });
 });
