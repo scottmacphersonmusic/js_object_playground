@@ -17,4 +17,12 @@ describe('A Performance instance', function() {
       "Paramount\n10/6/2015 @ 20:30\n$350\n"
     );
   });
+
+  it('should have a paysEnough() method', function() {
+    var date = new Date(2015, 10, 7, 14, 0);
+    var performance = new Performance('Some park', date, 300);
+    expect(performance.paysEnough()).to.be.true;
+    date.setHours(9);
+    expect(performance.paysEnough()).to.be.false;
+  });
 });
